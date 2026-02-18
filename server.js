@@ -70,5 +70,8 @@ app.post("/withdraw", async (req, res) => {
 
   res.json({ success: true });
 });
+app.get("/", (req, res) => {
+  res.send("Mini App Backend Running Successfully 🚀");
+});
 
 app.listen(3000, () => console.log("Server Running"));
